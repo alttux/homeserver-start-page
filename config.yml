@@ -1,0 +1,91 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+
+title: "Alt Tux Server"
+subtitle: "homeserver laptop"
+logo: "assets/icons/apple-touch-icon.png"
+
+theme: gruvbox-ios
+footer: '<p>Экосистема веб сервисов Alt Tux</p>'
+
+# Custom theme stylesheets
+stylesheet:
+  - "assets/custom.css"
+
+# Optional navbar links
+links:
+  - name: "Магазин приложений Nextcloud"
+    icon: "fa-brands fa-app-store"
+    url: "https://apps.nextcloud.com/"
+    target: "_blank"
+  - name: "Документация Nextcloud"
+    icon: "fas fa-book"
+    url: "https://docs.nextcloud.com/server/latest/admin_manual"
+    target: "_blank"
+
+updateIntervalMs: 30000
+
+colors:
+  light:
+    highlight-primary: "#d65d0e"
+    highlight-secondary: "#b57614"
+    highlight-hover: "#af3a03"
+    background: "#fbf1c7"
+    card-background: "rgba(242, 229, 188, 0.75)"
+    text: "#3c3836"
+    text-header: "#282828"
+    text-title: "#282828"
+    text-subtitle: "#7c6f64"
+    card-shadow: "rgba(40, 40, 40, 0.12)"
+    link: "#076678"
+    link-hover: "#af3a03"
+  dark:
+    highlight-primary: "#fe8019"
+    highlight-secondary: "#fabd2f"
+    highlight-hover: "#d65d0e"
+    background: "#1d2021"
+    card-background: "rgba(50, 48, 47, 0.55)"
+    text: "#ebdbb2"
+    text-header: "#fbf1c7"
+    text-title: "#fbf1c7"
+    text-subtitle: "#a89984"
+    card-shadow: "rgba(0, 0, 0, 0.45)"
+    link: "#83a598"
+    link-hover: "#fe8019"
+
+services:
+  - name: "Nextcloud"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Nextcloud start page"
+        logo: "assets/tools/Nextcloud_01-standard-logo.svg"
+        subtitle: "Стартовая страница"
+        tag: "app"
+        keywords: "self hosted file storage"
+        url: "https://homeserver.alttux.netcraze.link/nextcloud/apps/dashboard"
+        target: "_blank"
+      - name: "Nextcloud Calendar"
+        logo: "assets/tools/nextcloud-calendar.svg"
+        subtitle: "Календарь"
+        tag: "app"
+        keywords: "self hosted calendar"
+        url: "https://homeserver.alttux.netcraze.link/nextcloud/apps/calendar"
+        target: "_blank"
+      - name: "Nextcloud Music"
+        logo: "assets/tools/music_logo.svg"
+        subtitle: "Музыка"
+        tag: "app"
+        keywords: "self hosted music"
+        url: "https://homeserver.alttux.netcraze.link/nextcloud/apps/music"
+        target: "_blank"
+  - name: "Jellyfin"
+    icon: "fas fa-film"
+    items:
+      - name: "Jellyfin start page"
+        logo: "assets/tools/jellyfin-icon--color-on-dark.svg"
+        subtitle: "Стартовая страница"
+        tag: "app"
+        keywords: "self hosted media server"
+        url: "https://homeserver.alttux.netcraze.link/jellyfin/web/"
+        target: "_blank"
